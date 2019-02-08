@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 var data = [
     {
         title: 'customer obsession',
