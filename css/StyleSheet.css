@@ -1,3 +1,7 @@
+.container {
+    display: flex;
+}
+
 .flip-card {
     background-color: transparent;
     width: 300px;
