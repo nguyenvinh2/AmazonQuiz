@@ -1,56 +1,54 @@
 {
+    "globals": {
+        "Handlebars": true,
+        "$": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
     "env": {
         "browser": true,
-        "es6": true
+        "jquery": true,
+        "node": true,
+        "es6": true,
+        "jest": true
     },
     "rules": {
-        "space-infix-ops": "error",
-        "use-isnan": "warn",
-        "valid-typeof": "error",
-        "default-case": "warn",
-        "camelcase": "error",
-        "new-cap": "error",
-        "no-console": "warn",
-        "no-empty-function": "warn",
-        "no-redeclare": "error",
-        "no-unused-vars": "error",
-        "no-unused-expressions": "error",
-        "no-trailing-spaces": "warn",
-        "no-undefined": "error",
-        "no-undef": "error",
-        "no-mixed-spaces-and-tabs": [
-            "warn",
-            "smart-tabs"
-        ],
-        "strict": [
-            "error",
-            "global"
-        ],
         "eqeqeq": [
             "error",
             "always"
         ],
+        "no-template-curly-in-string": "error",
+        "no-console": "off",
+        "no-undefined": "off",
         "indent": [
             "error",
-            2
+            4
         ],
         "quotes": [
-            "error",
-            "single"
+            "warn",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
         ],
-        "semi": [
-            "error",
-            "always"
+        "no-multi-spaces": [
+            "warn",
+            {
+                "exceptions": {
+                    "VariableDeclarator": true
+                }
+            }
         ],
-        "comma-dangle": [
+        "no-trailing-spaces": "warn",
+        "new-cap": "warn",
+        "no-redeclare": [
             "error",
             {
-                "arrays": "never",
-                "objects": "always",
-                "imports": "never",
-                "exports": "never",
-                "functions": "ignore"
+                "builtinGlobals": true
             }
-        ]
+        ],
+        "eol-last": "error"
     }
 }
