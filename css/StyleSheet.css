@@ -21,7 +21,7 @@ body{
     flex-direction: row;
     margin: 10px;
     flex-grow: 1;
-    flex: 1 1 15%;
+    flex: 1 1 20vh;
     height: 20vh;
     perspective: 1000px;
   }
@@ -48,8 +48,7 @@ body{
   }
   
   .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    background-color: lightseagreen;
     z-index: 2;
     padding: 6px;
   }
@@ -64,7 +63,10 @@ body{
   }
 
 p {
-    font-size: 15px;
+    font-size: 25px;
+    font: bolder;
+    color: white;
+    perspective: 1000px;
 }
 
 .hidden {

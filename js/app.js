@@ -12,7 +12,7 @@ data.forEach(function (item) {
 });
 
 // eslint-disable-next-line no-unused-vars
-function revealAnswer() {
+function revealAnswer(e) {
     count = 0;
     // eslint-disable-next-line no-undef
     data.forEach(function (item) {
@@ -24,4 +24,12 @@ function revealAnswer() {
         }
         count++;
     });
+    e.preventDefault();
 }
+
+$('input[name=answer]').on('keydown', function(e) {
+    if (e.which === 13) {
+        revealAnswer(e);
+        e.preventDefault();
+    }
+});
