@@ -1,3 +1,10 @@
+body{
+  background-image: url("https://weareultraviolet.org/wp-content/uploads/2016/03/Amazon.com-Logo.svg_1.png");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -14,8 +21,8 @@
     flex-direction: row;
     margin: 10px;
     flex-grow: 1;
-    flex: 1 1 22%;
-    height: 25vh;
+    flex: 1 1 15%;
+    height: 20vh;
     perspective: 1000px;
   }
   
@@ -44,7 +51,7 @@
     background-color: #bbb;
     color: black;
     z-index: 2;
-    padding: 5px;
+    padding: 6px;
   }
   
   .flip-card-back {
@@ -62,4 +69,17 @@ p {
 
 .hidden {
   visibility: hidden;
+}
+
+h1{
+  text-align: center;
+}
+h6{
+  text-align: center;
+  font-size: 15px;
+}
+
+#question{
+  text-align: center;
+  margin-bottom: 25px;
 }
