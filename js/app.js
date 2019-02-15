@@ -41,6 +41,7 @@ $( document ).ready(function() {
     let clickButton = document.getElementsByClassName('flip-card');
     Array.from(clickButton).forEach(function(e, index){
         e.onclick = function() {
+            // eslint-disable-next-line no-undef
             $(`.modal-content p`).text(`${data[index].explanation}`);
             modal.style.display = 'block';
         };
@@ -54,6 +55,6 @@ $( document ).ready(function() {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
-    }  
+    };
 });
 
