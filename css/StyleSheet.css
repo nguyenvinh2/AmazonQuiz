@@ -1,3 +1,5 @@
+/* Done with W3School Tutorial Examples */
+
 body{
   background-image: url("https://weareultraviolet.org/wp-content/uploads/2016/03/Amazon.com-Logo.svg_1.png");
   background-size:     cover;                      /* <------ */
@@ -124,4 +126,10 @@ h6{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+footer{
+  margin-top: 25px;
+  font-size: 12px;
+  text-align: right;
 }
